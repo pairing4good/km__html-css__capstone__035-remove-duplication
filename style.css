@@ -1,24 +1,7 @@
 /* Do not change this file for this exercise*/
 
-.row {
-    display: flex;
-    border-bottom: solid gray;
-}
-
 div {
     padding: 5px;
-}
-
-.task-description {
-    flex: 90%;
-}
-
-.task-status {
-    border-radius: 10px;
-    flex: 10%; 
-    text-align: center;
-    min-width: 4em;
-    height: 1em;
 }
 
 .todo {

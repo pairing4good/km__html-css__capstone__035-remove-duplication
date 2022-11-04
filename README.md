@@ -1,16 +1,20 @@
-# 034 Style Task Form
+# 035 Remove Duplication
+
+[![033 Clean Code Duplication](https://img.youtube.com/vi/-gX14jd9l_0/0.jpg)](https://www.youtube.com/watch?v=-gX14jd9l_0)
 
 ```
-Given that at least one task exists
-When I list that task
-Then the task description input field lines up with the listed task description
-And the task status dropdown lines up with the listed task status
+The CSS properties flex:10% and flex:90% are each duplicated twice. 
+Change the CSS and HTML to remove this duplication while preserving the existing look and feel of the webpage.
 ```
 
 Steps:
-- The description text input should take up the left 90% of the row.
-- The status dropdown should take up the right 10% of the row.
-- The Add button should display in a new row on the right 10% of the row.
+- Rename task-form-left to left-side in the CSS and HTML
+- Rename task-form-right to right-side in the CSS and HTML
+- Add the left-side class to each of the task description elements
+- Add the right-side class to each of the task status elements
+- Remove flex:10% from the CSS property .task-status
+- Remove the CSS property .task-description along with its flex:90% property definition
+- Remove the class task-description from all of the task descriptions
 
 Resources:
-- https://www.w3schools.com/cssref/css3_pr_flex.asp
+- https://en.wikipedia.org/wiki/Code_refactoring
